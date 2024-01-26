@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://bmq432hb4dyyr"]
+
+[ext_resource type="Texture2D" uid="uid://015cfexpeitj" path="res://Assets/Textures/576.jpg" id="1_vh5cc"]
+[ext_resource type="Texture2D" uid="uid://bu6c0yd5wavht" path="res://Assets/Textures/aerial_rocks_04_4k/textures/aerial_rocks_04_rough_4k.png" id="2_173w8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tj28o"]
+resource_name = "stone"
+albedo_color = Color(0.74902, 0.941176, 0.956863, 1)
+albedo_texture = ExtResource("1_vh5cc")
+metallic = 1.0
+roughness_texture = ExtResource("2_173w8")
+uv1_triplanar = true
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0rjg5"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 0.02501, 1.00001),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 1, 0, 3, 0, 2, 0, 2, 0, 3, 0, 4, 0, 4, 0, 5, 0, 2, 0, 4, 0, 6, 0, 7, 0, 7, 0, 5, 0, 4, 0, 7, 0, 6, 0, 1, 0, 1, 0, 0, 0, 7, 0, 7, 0, 0, 0, 2, 0, 2, 0, 5, 0, 7, 0, 4, 0, 3, 0, 1, 0, 1, 0, 6, 0, 4, 0),
+"name": "stone",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray(0, 0, 228, 255, 254, 255, 0, 0, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 228, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 228, 255, 0, 0, 0, 0, 255, 255, 0, 0, 254, 255, 0, 0, 255, 255, 228, 255, 254, 255, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xcuwj"]
+resource_name = "road_Mesh road"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 0.02501, 1.00001),
+"attribute_data": PackedByteArray(255, 255, 24, 128, 255, 255, 47, 134, 0, 0, 24, 128, 0, 0, 47, 134, 255, 255, 47, 134, 0, 0, 47, 134, 255, 255, 24, 128, 0, 0, 24, 128, 0, 0, 47, 134, 0, 0, 24, 128, 255, 255, 47, 134, 255, 255, 24, 128, 255, 255, 47, 134, 0, 0, 47, 134, 255, 255, 24, 128, 0, 0, 24, 128, 0, 0, 255, 255, 0, 0, 96, 12, 255, 255, 255, 255, 255, 255, 96, 12, 255, 255, 96, 12, 255, 255, 255, 255, 0, 0, 96, 12, 0, 0, 255, 255),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray(2, 0, 0, 0, 1, 0, 1, 0, 3, 0, 2, 0, 6, 0, 4, 0, 5, 0, 5, 0, 7, 0, 6, 0, 10, 0, 8, 0, 9, 0, 9, 0, 11, 0, 10, 0, 14, 0, 12, 0, 13, 0, 13, 0, 15, 0, 14, 0, 18, 0, 16, 0, 17, 0, 17, 0, 19, 0, 18, 0, 22, 0, 20, 0, 21, 0, 21, 0, 23, 0, 22, 0),
+"material": SubResource("StandardMaterial3D_tj28o"),
+"name": "stone",
+"primitive": 3,
+"uv_scale": Vector4(39.3701, 41.3701, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray(0, 0, 228, 255, 254, 255, 255, 191, 0, 0, 0, 0, 254, 255, 255, 191, 0, 0, 228, 255, 0, 0, 255, 191, 0, 0, 0, 0, 0, 0, 255, 191, 0, 0, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 0, 0, 228, 255, 0, 0, 255, 255, 255, 255, 228, 255, 0, 0, 255, 255, 255, 255, 0, 0, 254, 255, 255, 191, 255, 255, 228, 255, 254, 255, 255, 191, 255, 255, 0, 0, 0, 0, 255, 191, 255, 255, 228, 255, 0, 0, 255, 191, 255, 255, 0, 0, 254, 255, 255, 127, 0, 0, 0, 0, 254, 255, 255, 127, 255, 255, 228, 255, 254, 255, 255, 127, 0, 0, 228, 255, 254, 255, 255, 127, 0, 0, 228, 255, 254, 255, 255, 191, 0, 0, 228, 255, 0, 0, 255, 191, 255, 255, 228, 255, 254, 255, 255, 191, 255, 255, 228, 255, 0, 0, 255, 191, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 254, 255, 255, 255, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 254, 255, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 0, 0, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 127, 255, 63, 255, 127, 255, 63, 255, 127, 255, 63, 255, 127, 255, 63)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_0rjg5")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kh1gu"]
+points = PackedVector3Array(-0.507937, -0.00793651, -0.507937, 0.507933, 0.0396779, 0.507937, 0.507933, -0.00793651, 0.507937, 0.507933, 0.0396779, -0.507937, -0.507937, 0.0396779, 0.507937, -0.507937, -0.00793651, 0.507937, 0.507933, -0.00793651, -0.507937, -0.507937, 0.0396779, -0.507937)
+
+[node name="Road" type="StaticBody3D"]
+
+[node name="road" type="MeshInstance3D" parent="."]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+mesh = SubResource("ArrayMesh_xcuwj")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_kh1gu")
